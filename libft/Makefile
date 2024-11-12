@@ -21,9 +21,10 @@ SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
 OBJS_DIR = ./
 OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 
+all: $(NAME)
 
-.c.o: $(SRCS)
-	@$(CC) $(CFLAGS) -c -o $@ $<
+.c.o: 
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@$(AR) $@ $^
@@ -31,8 +32,6 @@ $(NAME): $(OBJS)
 
 bonus: $(OBJS_B)
 	$(AR) $(NAME) $^
-
-all: $(NAME)
 
 clean:
 	@$(RM) $(OBJS)

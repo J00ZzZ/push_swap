@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_stk.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: liyu-her <liyu-her@student.42.kl>          +#+  +:+       +#+        */
+/*   By: liyu-her <liyu-her@student.42kl.edy.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 22:40:48 by liyu-her          #+#    #+#             */
-/*   Updated: 2024/11/12 02:39:04 by liyu-her         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:47:51 by liyu-her         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ t_stack	*ft_stacknew(int content)
 	if (!ptr)
 		return (0);
 	ptr->num = content;
-	ptr->index = 0;
 	ptr->next = NULL;
 	ptr->prev = NULL;
 	ptr->target = -1;

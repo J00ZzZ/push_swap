@@ -21,9 +21,8 @@ LIBFT = $(LIBFT_PATH)libft.a
 all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
-		@$(CC) $(CFLAGS) $(LIBFT) $(OBJS) $(OPTION) -o $(NAME)
+	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -L$(LIBFT_PATH) -lft
 		@echo "\033[92m--Push Swap Compiled--\033[0m"
-
 
 $(LIBFT):
 		@make -C $(LIBFT_PATH)

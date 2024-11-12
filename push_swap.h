@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: liyu-her <liyu-her@student.42.kl>          +#+  +:+       +#+        */
+/*   By: liyu-her <liyu-her@student.42kl.edy.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 09:26:58 by liyu-her          #+#    #+#             */
-/*   Updated: 2024/11/12 02:39:39 by liyu-her         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:46:51 by liyu-her         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 typedef struct s_stack
 {
 	int				num;
-	int				index;
 	int				index2;
 	int				target;
 	int				cost;

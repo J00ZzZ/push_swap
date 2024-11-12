@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_sort.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: liyu-her <liyu-her@student.42.kl>          +#+  +:+       +#+        */
+/*   By: liyu-her <liyu-her@student.42kl.edy.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:43:51 by liyu-her          #+#    #+#             */
-/*   Updated: 2024/11/12 02:38:55 by liyu-her         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:48:30 by liyu-her         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,28 +125,4 @@ void	ft_solvethree(t_stack **s)
 		sa(s, 1);
 		rra(s, 1);
 	}
-}
-
-void	ft_solvefnf(t_stack **a, t_stack **b)
-{
-	while (ft_index_size(b) <= 1)
-	{
-		if ((*a)->index == 0 || (*a)->next->index == 1)
-			pb(a, b);
-		else
-			ra(a, 1);
-	}
-	if ((*b)->index == 0)
-		sb(b, 1);
-	if ((get_nth_stack(*a, 2)->index) != 4)
-	{
-		if ((*a)->index == 4)
-			ra(a, 1);
-		else
-			rra(a, 1);
-	}
-	if ((*a)->index > (*a)->next->index)
-		sa(a, 1);
-	pa(a, b);
-	pa(a, b);
 }

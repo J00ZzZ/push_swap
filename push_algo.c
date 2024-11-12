@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_algo.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: liyu-her <liyu-her@student.42.kl>          +#+  +:+       +#+        */
+/*   By: liyu-her <liyu-her@student.42kl.edy.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:10:55 by liyu-her          #+#    #+#             */
-/*   Updated: 2024/11/12 02:39:23 by liyu-her         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:50:09 by liyu-her         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,36 +38,9 @@ void	ft_div(t_stack **a, t_stack **b, t_stack *tmp_a, int i)
 	pb(a, b);
 }
 
-void	ft_fillpos(t_stack *a)
-{
-	t_stack	*com;
-	t_stack	*cur;
-	int		rank;
-
-	cur = a;
-	while (cur != NULL)
-	{
-		rank = 0;
-		com = a;
-		while (com != NULL)
-		{
-			if (cur->num > com->num)
-				rank++;
-			com = com->next;
-		}
-		cur->index = rank;
-		cur = cur->next;
-	}
-}
-
 void	ft_bigsort(t_stack **a, t_stack **b, int i)
 {
-	if (i == 4 || i == 5)
-	{
-		ft_fillpos(*a);
-		ft_solvefnf(a, b);
-	}
-	else if (i > 5 && i <= 100)
+	if (i >= 4 && i <= 100)
 		ft_insertsort(a, b, 1);
 	else if (i > 100 && i < 500)
 		ft_insertsort(a, b, 2);
