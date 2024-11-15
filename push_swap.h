@@ -6,7 +6,7 @@
 /*   By: liyu-her <liyu-her@student.42kl.edy.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 09:26:58 by liyu-her          #+#    #+#             */
-/*   Updated: 2024/11/12 21:46:51 by liyu-her         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:16:30 by liyu-her         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ typedef struct s_stack
 
 /* Algo 5 */
 void				ft_div(t_stack **a, t_stack **b, t_stack *tmp_a, int i);
-void				ft_fillpos(t_stack *a);
 void				ft_bigsort(t_stack **a, t_stack **b, int i);
 void				ft_smallsort(t_stack **a, int i);
 void				ft_sort(t_stack **a, t_stack **b);
@@ -63,7 +62,6 @@ int					*ft_sort_rank(int *array, t_stack *a, int j);
 void				ft_rank(t_stack **a, int div, int size);
 void				ft_insertsort(t_stack **a, t_stack **b, int div);
 void				ft_solvethree(t_stack **s);
-void				ft_solvefnf(t_stack **a, t_stack **b);
 void				ft_cleanlst(t_stack **a, t_stack **b);
 int					ft_b_target(t_stack **a, t_stack **b);
 void				rot_rrb_dir(t_stack **a, t_stack **b, t_stack *clean);
